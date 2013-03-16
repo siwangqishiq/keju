@@ -7,95 +7,70 @@ import org.xml.sax.helpers.DefaultHandler;
 import com.xinlan.model.Item;
 import com.xinlan.model.Paper;
 
-public class ImportsXmlParseHandler extends DefaultHandler
-{
+/**
+ * Panyi潘易
+ * @author Administrator
+ *
+ */
+public class ImportsXmlParseHandler extends DefaultHandler {
 	private ArrayList<Paper> paperList;
 	private ArrayList<Item> itemList;
 	private String tagName;
 	private Paper paper;
 	private Item item;
 	private int itemType;
-	
-	public ImportsXmlParseHandler(ArrayList<Paper> paperList,ArrayList<Item> itemList)
-	{
-		this.paperList=paperList;
-		this.itemList=itemList;
-		tagName="";
-		item=null;
-		paper=null;
+
+	public ImportsXmlParseHandler(ArrayList<Paper> paperList,
+			ArrayList<Item> itemList) {
+		this.paperList = paperList;
+		this.itemList = itemList;
+		tagName = "";
+		item = null;
+		paper = null;
 	}
-	
+
 	@Override
-	public void characters(char[] ch, int start, int length) throws SAXException
-	{
-		String str=new String(ch,start,length);
-		if(tagName.equals("id"))
-		{
+	public void characters(char[] ch, int start, int length)
+			throws SAXException {
+		String str = new String(ch, start, length);
+		if (tagName.equals("id")) {
 			paper.setPaperId(Integer.parseInt(str));
-		}
-		else if(tagName.equals("title"))
-		{
+		} else if (tagName.equals("title")) {
 			paper.setTitle(str);
-		}
-		else if(tagName.equals("num"))
-		{
+		} else if (tagName.equals("num")) {
 			paper.setSubjectNum(Integer.parseInt(str));
-		}
-		else if(tagName.equals("id"))
-		{
-			itemType=Integer.parseInt(str);
+		} else if (tagName.equals("id")) {
+			itemType = Integer.parseInt(str);
 			item.setItemType(itemType);
-		}
-		else if(tagName.equals("itemNumber"))
-		{
+		} else if (tagName.equals("itemNumber")) {
 			item.setItemNumber(Integer.parseInt(str));
-		}
-		else if(tagName.equals("itemTitle"))
-		{
+		} else if (tagName.equals("itemTitle")) {
 			item.setItemTitle(str);
-		}
-		else if(tagName.equals("sectionA"))
-		{
+		} else if (tagName.equals("sectionA")) {
 			item.setSectionA(str);
-		}
-		else if(tagName.equals("sectionB"))
-		{
+		} else if (tagName.equals("sectionB")) {
 			item.setSectionB(str);
-		}
-		else if(tagName.equals("sectionC"))
-		{
+		} else if (tagName.equals("sectionC")) {
 			item.setSectionC(str);
-		}
-		else if(tagName.equals("sectionD"))
-		{
+		} else if (tagName.equals("sectionD")) {
 			item.setSectionD(str);
-		}
-		else if(tagName.equals("answer"))
-		{
+		} else if (tagName.equals("answer")) {
 			item.setAnswer(str);
-		}
-		else if(tagName.equals("extern"))
-		{
+		} else if (tagName.equals("extern")) {
 			item.setExtern(str);
-		}
-		else if(tagName.equals("answerDesc"))
-		{
+		} else if (tagName.equals("answerDesc")) {
 			item.setAnswerDesc(str);
 		}
 	}
 
 	@Override
 	public void endElement(String uri, String localName, String qName)
-			throws SAXException
-	{
-		tagName="";
-		if("item".equals(localName))
-		{
+			throws SAXException {
+		tagName = "";
+		if ("item".equals(localName)) {
 			item.setFlag(1);
 			itemList.add(item);
-		}
-		else if("paper".equals(localName))
-		{
+		} else if ("paper".equals(localName)) {
 			paper.setExtern("");
 			paper.setFlag(1);
 			paper.setStatus(1);
@@ -105,17 +80,13 @@ public class ImportsXmlParseHandler extends DefaultHandler
 
 	@Override
 	public void startElement(String uri, String localName, String qName,
-			Attributes attributes) throws SAXException
-	{
-		tagName=localName;
-		if("item".equals(localName))
-		{
-			item=new Item();
-		}
-		else if("paper".equals(localName))
-		{
-			paper=new Paper();
+			Attributes attributes) throws SAXException {
+		tagName = localName;
+		if ("item".equals(localName)) {
+			item = new Item();
+		} else if ("paper".equals(localName)) {
+			paper = new Paper();
 		}
 	}
-	
-}//end class
+
+}// end class
