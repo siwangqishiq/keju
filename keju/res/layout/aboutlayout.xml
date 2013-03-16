@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"  
+    android:id="@+id/ScrollView" 
+    android:layout_width="fill_parent"  
+    android:layout_height="wrap_content"
+	android:scrollbars="vertical">  
+	<LinearLayout 
+	    android:orientation="vertical"
+	    android:layout_height="wrap_content"
+	    android:layout_width="fill_parent">
+	    <TextView 
+	        android:gravity="center_horizontal"
+	        android:text="关于本软件\n
+.若手机不能下载更新资源文件，可访问http://dl.dbank.com/c0b88jw8i2下载资源文件，将下载的资源导入到手机中\n
+.软件版本1.1\n
+.由于数据格式问题，本软件暂未引入行政职业能力测试中的图标分析题，计划将在下一个版本中引入。\n
+
+
+朝为田舍郎，暮登天子堂。
+将相本无种，男儿当自强。
+天子重英豪，文章教尔曹。
+万般皆下品，惟有读书高。
+
+"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        />
+	     <ImageView 
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content" 
+	         android:src="@drawable/aboutpic"/>
+	</LinearLayout>
+</ScrollView>

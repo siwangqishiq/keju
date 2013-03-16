@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="fill_parent"
+     android:layout_height="fill_parent"
+     android:orientation="vertical"
+     android:paddingBottom="1dip"
+     android:paddingLeft="5dip"
+     android:paddingRight="5dip"
+     android:paddingTop="3dip" >
+ <ImageView
+         android:id="@+id/imgtips"
+         android:layout_width="35dip"
+         android:layout_height="35dip"
+         android:layout_alignParentLeft="true"
+         android:layout_marginTop="10dip"
+         android:src="@drawable/papertips" />
+     
+     <TextView
+         android:id="@+id/paper_title"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentTop="true"
+         android:paddingLeft="3dip"
+         android:singleLine="false"
+         android:layout_toRightOf="@id/imgtips"
+         android:text="ssssssssss"
+         android:textSize="12pt" />
+
+     <TextView
+         android:id="@+id/paper_subject_num"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@id/paper_title"
+         android:paddingLeft="3dip"
+         android:singleLine="true"
+         android:layout_toRightOf="@id/imgtips"
+         android:text="asa"
+         android:textSize="10pt" />
+
+     <TextView
+         android:id="@+id/paper_status"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentRight="true"
+         android:layout_below="@id/paper_title"
+         android:paddingLeft="3dip"
+         android:singleLine="true"
+         android:text="assssassss"
+         android:textSize="10pt" />
+
+ </RelativeLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/mainbackground"
+    android:orientation="vertical"
+    android:id="@+id/main"
+    >
+    <TextView  
+    	android:layout_width="wrap_content"
+       	android:layout_height="wrap_content"
+	    android:text="公务员考试"
+	    android:textStyle="bold"
+	    android:layout_centerHorizontal="true"
+	    android:textColor="#000000"
+	    android:textSize="20dp"
+	    android:id="@+id/maintitle"
+	    />
+	    
+	<TableLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_centerInParent="true"
+	    android:stretchColumns="1"
+	    android:layout_below="@id/maintitle"
+	    >
+
+		<TableRow>
+
+		    <ImageView
+		        android:id="@+id/paperListBtn"
+		        android:paddingLeft="10dip"
+		        android:paddingTop="40dip"
+		        android:src="@drawable/mainpapers" />
+
+		    <ImageView
+		        android:id="@+id/mainresume"
+		        android:paddingLeft="5dip"
+		        android:paddingTop="40dip"
+		        android:src="@drawable/mainresume" />
+		     <ImageView
+		        android:id="@+id/mainupdate"
+		        android:paddingLeft="5dip"
+		        android:paddingTop="40dip"
+		        android:src="@drawable/mainupdate" />
+		</TableRow>
+	    
+	     <TableRow android:paddingTop="30dip" >
+
+	         <ImageView
+	             android:id="@+id/addNewPaper"
+	             android:paddingLeft="10dip"
+	             android:paddingRight="10dip"
+	             android:paddingTop="40dip"
+	             android:src="@drawable/mainimport" />
+
+			    <ImageView android:src="@drawable/maindesc"
+			        android:id="@+id/maindescbtn"
+			    	android:paddingLeft="10dip"
+			    	android:paddingTop="40dip"
+			    	/>
+
+			    <ImageView
+			        android:id="@+id/mainabout"
+			        android:adjustViewBounds="true"
+			        android:paddingLeft="10dip"
+			        android:paddingTop="40dip"
+			        android:src="@drawable/mainabout" />
+
+	    </TableRow>
+	</TableLayout>
+
+	    <ImageView
+	        android:id="@+id/exitBtn"
+	        android:layout_width="50dip"
+	        android:layout_height="50dip"
+	        android:layout_alignParentBottom="true"
+	        android:layout_alignParentRight="true"
+	        android:adjustViewBounds="true"
+	        android:scaleType="fitXY"
+	        android:src="@drawable/mainexit" />
+
+</RelativeLayout>

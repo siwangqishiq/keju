@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"  
+    android:id="@+id/ScrollView" 
+    android:layout_width="fill_parent"  
+    android:layout_height="wrap_content"
+	android:scrollbars="vertical">  
+	<RelativeLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    > 
+	<LinearLayout 
+	    android:id="@+id/desclayout"
+	    android:orientation="vertical"
+	    android:layout_height="wrap_content"
+	    android:layout_width="fill_parent">
+	    <TextView 
+	        android:gravity="center_horizontal"
+	        android:text="公务员考试"
+	        android:textSize="25dip"
+	    	android:textStyle="bold"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        />
+	     <TextView 
+	        android:text="中国从20世纪90年代开始引入公务员考试，在进入21世纪之后，该项考试趋于成熟和稳定。每年都会在10月份国庆过后发布招考公告，一般来说公共科目笔试时间都在11月底（11月的最后一个周日），如果遇到其他较为重要的会议或者活动，可能会推后到12月初举行（如2008年国家公务员考试就是在12月初举行的）。这里有一点要特别注意的是，每年年底举行的考试都是下一年度的公务员考试，比如2009年11月底举行的公务员考试就被称为2010年公务员考试，这点对于考生选取参考书和教材尤为重要。"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        />
+	     <ImageView 
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content" 
+	         android:src="@drawable/desc"/>
+	      <TextView 
+	        android:text="一、报考
+　　1、浏览报考信息（考试公告、考试大纲、职位条件一览表）
+　　2、选定职位（专业上有疑义，可电话咨询所报单位）
+　　3、开始网报
+　　（1）登陆网报网站及页面
+　　（2）填写报名信息并上传照片
+　　（3）等待审核
+　　（4）审核通过后网上缴费
+　　（5）报名成功
+　　中国公务员正规统一都叫国家公务员，不管是中央还是地方都是国家公务员，具体才分为中央、国家机关公务员和地方国家公务员。
+　　国家公务员考试是指：中央、国家机关以及中央国家行政机关派驻机构、垂直管理系统所属机构录用机关工作人员和国家公务员的考试。
+　　地方的公务员考试是指：地方各级党政机关，社团等为招录机关工作人员和国家公务员而组织进行的各级地方性考试。
+　　中央和地方考试单独进行，不存在什么从属关系，考生根据自己要报考的政府机关部门选择要参加的考试，也可同时报考，相互之间不受影响。
+　　中央公务员考试和地方考试性质一样，都属于招录考试，考生填报相应的职位进行考试，一旦被录取便成为该职位的工作人员。具体公务员政策可参看国家公务员网的相关政策。　
+　　地方公务员考试有资格考试和招录考试两种，资格考试即成绩合格者发给公务员资格证书，考生可凭此资格证在市、区、县等国家机关求职，如北京市；有的需要再参加具体部门的一些考试，有的直接面试考核。绝大多数地方公务员考试采用的是招录考试的方式，考生选择职位报名参加考试，考上后就直接录取为该部门的公务员，和中央公务员程序一样。"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        /> <TextView 
+	        android:text="二、笔试
+　　中央、国家机关的公务员考试包括笔试（公共科目、专业科目）和面试。以前公共科目笔试按A、B类职位分别进行。A类职位笔试公共科目为《行政职业能力测验》（A）和《申论》；B类职位笔试公共科目为《行政职业能力测验》（B）；专业科目笔试和面试时间由招考部门自行通知。从2006年开始，A、B类都要考一样的科目，就是《行政职业能力测验》和《申论》，只不过《行政职业能力测验》分别命题。而各个地方的考试科目都是地方自定的，一般都有笔试和面试。笔试科目各有不同，北京、山东、浙江、上海和广东等省的笔试科目为《行政职业能力测验》和《申论》；黑龙江省的笔试科目为《综合基础知识》、《行政职业能力测验》和《申论》。要报地方公务员考试的同学要注意查阅当地政府公布的招考简章，以便有针对性地进行复习。目前就公务员考试改革的趋势来看，倾向于向考《行政职业能力测验》和《申论》两科靠拢。"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        /> <TextView 
+	        android:text="三、面试及心理测评
+　　结构化面试
+　　综合能力和个人素质
+　　情景模拟
+　　实际操作
+　　无领导小组讨论
+四、体检
+　　组织体检
+　　身体状况
+五、考核
+　　审阅档案、调查了解
+　　品行、业绩
+六、审批录用
+　　综合评定报考者的考试与考核结果
+　　确定录用人选"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        />   <ImageView 
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content" 
+	         android:src="@drawable/mianshi"/>
+	        <TextView 
+	        android:text="国务院人事部门是国家公务员录用的主管机关，负责全国国家公务员录用的综合管理工作，包括：拟定国家  公务员考试面试现场公务员录用法规；制定有关的具体政策；指导与监督地方国家行政机关国家公务员录用的管理工作；负责组织国务院各工作部门录用国家公务员的考试和备案工作，某些考试工作可以委托省级政府人事部门承担。
+　　省、自治区、直辖市政府人事部门是本行政辖区国家公务员录用的主管机关，负责本行政辖区内国家公务员录用的管理工作，包括：根据国家公务员的录用法规，制定本行政辖区国家公务员录用的有关规定；贯彻执行国家有关的方针政策；指导和监督市(地)级以下国家行政机关国家公务员录用的管理工作；负责组织省级政府各工作部门录用国家公务员的考试和审批工作；规定市(地)级以下国家行政机关录用考试的组织办法；承办国务院人事部门委托的有关考试工作。
+　　市(地)级以下政府人事部门按照省级政府人事部门的规定，负责本行政辖区内国家公务员录用的有关管理工作。
+　　各级政府工作部门按照同级政府人事部门的要求，承担本部门国家公务员录用的有关工作。
+　　国家公务员录用考试的服务机构受政府人事部委托，承担某些录用考试具体操作工作"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        />
+	        <TextView 
+	        android:text="国考科目
+
+　　国家人事部在总结近年来中央、国家机关考试录用工作的基础上，提出了从2002年起中央、国家机关公务员录用考试所遵循的原则，即“分类考试，突出能力，方便考生，定时定期”。按照职位性质，报考职位分两大类，报考者只能选择一个类别中的一个部门或单位进行报考。以中央党群机关、中央国家行政机关及部分中央垂直管理机构中的省级机关和直属机构部分依照公务员制度管理的国务院直属事业单位为第一类。以中央垂直管理机构地(市)级以下所有机关及部分中央垂直管理机构中的省级机关和直属机构，部分依照公务员制度管理的国务院直属事业单位为第二类。考试没有指定教材。
+　　报考第一类职位的考生公共科目笔试为《行政职业能力测验一》和《申论》两科。建议大家看看《行测100分》与《申论7号》，这是技巧与实战的结合，能短期迅速提高你的成绩。这两个可以帮助你。《行政职业能力测验一》考查范围包括：常识，涵盖政治、法律、经济、管理、人文、科技等；言语理解与表达，包括以下三种题型：阅读理解(短文阅读、文章阅读)、词语表达(选词填空、词语替换)和语句表达(病句判断、歧义辨析、长句判断、选句填空)；数量关系(数字推理、数学运算)；判断推理(图形推理、演绎推理、定义判断、事件排序)以及资料分析(文字资料分析、表格资料分析、统计图形分析)。全部为客观性试题，共135-140道题，考试时限为120分钟。
+　　《申论》主要通过考生对给定材料的分析、概括，考查其运用马克思主义哲学、邓小平理论和行政管理等理论知识以公务员身份解决实际问题的能力，以及阅读理解能力、综合分析能力和文字表达能力。《申论》试题全部为主观性试题，考试时限为150分钟。
+　　报考第二类职位的考生公共笔试科目为《行政职业能力测验二》一科。《行政职业能力测验二》的题型、题量、难度等与《行政职业能力测验一》略有不同。专业科目笔试的内容、方式由各招考部门确定。在各地实际操作过程中，考试科目可能不完全一致，部分省市可能还会考公共基础知识(涵盖政治、法律、经济、管理、人文、科技等)，考生可根据当地招考公告进行复习。"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        />
+	</LinearLayout>
+	<RelativeLayout 
+        android:id="@+id/adcontainer2"
+        android:layout_below="@id/desclayout"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content">
+    </RelativeLayout>
+    </RelativeLayout>
+</ScrollView>
